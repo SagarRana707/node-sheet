@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Node</title>
+    <link rel="stylesheet"  href="./styles.css">
+<script src="form.js" defer ></script>
+</head>
+<body>
+
+    <h1 style="text-align: center;">You are on the home page</h1>
+    <form  id="myForm" method="POST" action="/formSubmit" class="form">
+        <input type="text" name="firstName" placeholder="First Name" required>
+        <input type="text" name="lastName" placeholder="Last Name" required>
+        <input type="number" name="age" placeholder="Age" min="0" max="120" required>
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <label for="city">City:</label>
+        <select name="city" id="city" required>
+            <option value="newyork">Chandigarh</option>
+            <option value="losangeles">Mohali</option>
+            <option value="chicago">Kharar</option>
+            <!-- Add more cities as needed -->
+        </select>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="file" name="image" accept=".jpg, .jpeg, .png" />
+        <input type="submit" name="Save">
+    </form>
+    <style>body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+}
+
+.form {
+    display: flex;
+    flex-flow: column;
+    width: 300px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+input, select {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+</style>
+</body>
+</html>
